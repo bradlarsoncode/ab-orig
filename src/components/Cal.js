@@ -9,11 +9,9 @@ import ContactUs from './contactForm'
 export default function Cal() {
   var tomorrow = addDays(new Date(), 14)
   const [startDate, setStartDate] = useState(null)
-  // const [startSelected, setStartSelected]= useState(new Date())
   const [endDate, setEndDate] = useState(null);
   const maxDays = addDays(startDate, 3);
   const distance = addDays(new Date(), 120)
-  // const threeDays = today.setDate(today.getDate() + 3);
 
 
   const selectionRange = {
@@ -21,8 +19,6 @@ export default function Cal() {
     endDate: endDate,
     key: "selection",
   };
-
-  // console.log(selectionRange[endDate]);
 
   function handleSelect(ranges){
 
@@ -45,9 +41,10 @@ export default function Cal() {
     new Date(2021, 4, 31),
   ];
 
-  function maxDate(){
-    setEndDate(maxDays)
-  }
+  // function maxDate(){
+  //   setEndDate(maxDays)
+  // }
+
 console.log(startDate, endDate)
     return (
       <div>

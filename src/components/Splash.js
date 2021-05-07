@@ -1,7 +1,6 @@
 import React from 'react'
 import House from '../assets/images/house.jpg'
 import {Link} from 'react-router-dom'
-import Nav from './Nav'
 
 export default function Splash(){
     return (
@@ -9,7 +8,7 @@ export default function Splash(){
        
         <img
           src={House}
-          //   src="https://webfilms-films.s3.amazonaws.com/photos/listings/0-PHL/thumbnail/0-0-PHL-thumb.jpeg"
+          alt="house"
           className="absolute h-full w-full object-cover"
         />
         <div className="inset-0 bg-black opacity-25 absolute"></div>

@@ -14,6 +14,7 @@ export default function Nav(){
                 <img
                   src="https://webfilms-films.s3.amazonaws.com/photos/househouse.png"
                   className="w-8 mr-2 fill-current"
+                  alt="house"
                   viewBox="0 0 16.16 12.57"
                 />
                 {/* <svg

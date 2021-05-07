@@ -130,7 +130,7 @@ export default function Listing (){
             <div class="flex items-center justify-center w-full md:w-1/2">
               <img
                 src="https://images.unsplash.com/photo-1493238792000-8113da705763?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80"
-                alt="car photo"
+                alt="car"
                 class="w-full h-full max-w-2xl rounded"
               />
             </div>

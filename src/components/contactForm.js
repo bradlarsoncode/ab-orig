@@ -442,37 +442,34 @@
 
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Success from "./Success";
+
 import "./stylesheet.scss";
 
 export default function ContactUs({
   startDate,
   endDate,
   maxDays,
-  disabledDates,
 }) {
   let dateFormat = require("dateformat");
   let start = dateFormat(startDate, "dddd, mmmm dS, yyyy");
   let end = dateFormat(endDate, "dddd, mmmm dS, yyyy");
-  const [guests, setGuests] = useState(0);
-  const [subject, setSubject] = useState("You Have a Guest Coming!");
+  // const [guests, setGuests] = useState(0);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
-     const guestsIncrease = () => {
-       if (guests < 4) {
-         setGuests((prevCount) => prevCount + 1);
-       }
-     };
+    //  const guestsIncrease = () => {
+    //    if (guests < 4) {
+    //      setGuests((prevCount) => prevCount + 1);
+    //    }
+    //  };
 
       const emailHandler = (event) => {
         setEmail(event.target.value);
       };
-  const guestsHandler = (event) => {
-    console.log(event.target.value)
-    setGuests(event.target.value)
-  }
+  // const guestsHandler = (event) => {
+  //   console.log(event.target.value)
+  //   setGuests(event.target.value)
+  // }
 
   const dateHandler = () =>{
     return `I'd like to visit 
