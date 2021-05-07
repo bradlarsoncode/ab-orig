@@ -7,16 +7,20 @@ import './components/stylesheet.scss'
 import Pics from "./components/Pics"
 import Nav from './components/Nav'
 import Splash from './components/Splash'
+import Listing from './components/Listing'
+import Modal from './components/Modal'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-    {/* <Nav/> */}
+      <Nav/>
       <div className="App">
         <Switch>
           <Route exact path="/stay" component={Cal} />
           <Route exact path="/" component={Splash}/>
+          <Route exact path="/listing" component={Listing}/>
+          <Route exact path="/modal" component={Modal}/>
           {/* <Route exact path="/place" component={Place} />
           <Route exact path="/pieces" component={Pieces} />
           <Route exact path="/home" component={Home} /> */}
